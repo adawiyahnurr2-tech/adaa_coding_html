@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curriculum Vitae</title>
+
+<style>
+    body {
+        font-family: Arial;
+        font-size: 16px;
+        color: black;
+        margin: 40px;
+    }
+
+    /* Heading 1 */
+    h1 {
+        font-family: Georgia;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        background-color: lightgray;
+        padding: 10px;
+        color: blue;
+        letter-spacing: 5px;
+    }
+
+    /* Heading 2 */
+    h2 {
+        font-family: Georgia;
+        font-size: 18px;
+        color: darkred;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .year {
+        font-weight: bold;
+    }
+
+    .section {
+        margin-left: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>CURRICULUM VITAE</h1>
+
+<h2>PERSONAL DATA</h2>
+<div class="section">
+    Name: Azamat<br>
+    Surname: Azamat<br>
+    Date of birth: 30.07.74<br>
+    Place of birth: Bishkek, Kyrgyzstan<br>
+</div>
+
+<h2>EDUCATION</h2>
+<div class="section">
+    <span class="year">2005–2009</span><br>
+    Computer Engineering in the Technical University of Kyrgyzstan in Bishkek<br><br>
+
+    <span class="year">2001–2005</span><br>
+    High School “Manas” in Osh<br><br>
+
+    <span class="year">1995–2001</span><br>
+    Primary school
+</div>
+
+<h2>PROFESSIONAL EXPERIENCE</h2>
+<div class="section">
+    <span class="year">2007–2009</span><br>
+    Computer teacher in high school in Bishkek<br><br>
+
+    <span class="year">2005–2007</span><br>
+    Secretary of Department of Software
+</div>
+
+</body>
+</html>
+
+
+
+EXERCISE 2
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curriculum Vitae</title>
+
+<style>
+    body {
+        font-family: Arial;
+        font-size: 16px;
+        margin: 30px;
+    }
+
+    /* 2-column container */
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;  /* left wider, right smaller */
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Left panel */
+    .content {
+        border: 1px solid black;
+        padding: 20px;
+        min-height: 150px;
+    }
+
+    /* Right panel (Navigation bar) */
+    .sidebar {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar a {
+        padding: 15px;
+        border-bottom: 1px solid black;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .sidebar a:hover {
+        background-color: lightgray;
+    }
+
+    h2 {
+        font-family: Georgia;
+        color: darkred;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .box {
+        border: 1px solid black;
+        padding: 20px;
+        margin-top: 10px;
+        width: 50%;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- 2 COLUMN LAYOUT -->
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="content">
+        <h1>Curriculum Vitae</h1>
+        <p>Welcome to my CV!</p>
+    </div>
+
+    <!-- RIGHT SIDE (NAVIGATION BAR) -->
+    <div class="sidebar">
+        <a href="#personal">Personal data</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Professional experience</a>
+    </div>
+
+</div>
+
+<!-- PAGE CONTENT BELOW -->
+
+<h2 id="personal">Personal Data</h2>
+<div class="box">
+    Name: Azamat <br>
+    Surname: Azamat <br>
+    Date of birth: 30.07.74 <br>
+    Place of birth: Bishkek, Kyrgyzstan <br>
+</div>
+
+<h2 id="education">Education</h2>
+<div class="box">
+    2005–2009: Computer Engineering in the Technical University of Kyrgyzstan in Bishkek <br><br>
+    2001–2005: High School “Manas” in Osh <br><br>
+    1995–2001: Primary school
+</div>
+
+<h2 id="experience">Professional Experience</h2>
+<div class="box">
+    2007–2009: Computer teacher in high school in Bishkek <br><br>
+    2005–2007: Secretary of Department of Software
+</div>
+
+</body>
+</html
